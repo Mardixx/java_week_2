@@ -13,7 +13,7 @@ public class challenge3 {
 
     public static void main(String[] args) {
 
-        String fileName = "src/Challenge3/effects-of-covid19-on-trade.csv";
+        String fileName = "src/Challenge2/effects-of-covid19-on-trade.csv";
         try (Stream<String> lines = Files.lines(Paths.get(fileName))) {
             List<List<String>> values = lines.map(line -> Arrays.asList(line.split(","))).collect(Collectors.toList());
             for (int i = 0; i < values.size(); i++) {
